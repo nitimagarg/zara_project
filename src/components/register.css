@@ -1,0 +1,122 @@
+.reg_main{
+    width:100%;
+    height:100vh;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.reg_form{
+    flex:1 1 0;
+    display:grid;
+    grid-column: 1;
+    margin-left:15%;
+    margin-top:25%;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(6);
+}
+.reg_image{
+    flex:1 1 0;
+    overflow: hidden;
+    height: auto;
+    grid-column: 2;
+}
+.image_reg{
+    width:100%;
+    height:auto;
+    object-fit: cover;
+    display:block;
+}
+.reg_head{
+    grid-column: 1/4;
+    align-content: center;
+    color:rbg(62,60,60);
+
+}
+.input_phone{
+    grid-row: 5;
+    grid-column: 1/4;
+    display:grid;
+    grid-template-columns: 0.5fr 1.5fr 2fr;
+    grid-template-rows: repeat(1,1fr);
+    align-items: center;
+}
+.prefix{
+    grid-column: 1;
+    display:flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+.prefix_value{
+    width:100%;
+    border:none;
+    border-bottom: 0.5px solid rgb(62, 60, 60);
+    background-color: white;
+}
+.prefix_value::placeholder{
+    color:black;
+}
+.label_prefix{
+    color:rgb(62, 60, 60);
+}
+.telephone{
+    grid-column-start:2;
+    grid-column-end: 4;
+}
+.check{
+    grid-row:6;
+    grid-column: 1/4;
+    display:grid;
+    grid-template-rows: repeat(3,1fr);
+}
+.check_1{
+    grid-row:2;
+    font-size: x-small;
+}
+.check_1:checked{
+    color:black
+}
+.create{
+    grid-row: 7;
+    grid-column:1/4;
+    margin-top: 30px;
+    background-color: white;
+}
+.input_container{
+    position:relative;
+    grid-column: 1/4;
+    margin-top: 15px;
+}
+.input_container input{
+    width:100%;
+    border:none;
+    border-bottom: 0.5px solid rgb(62, 60, 60);
+    background-color: white;
+    padding:5px;
+    outline: none;
+}
+.input_container label{
+    position: absolute;
+    pointer-events: none;
+    transform: translate(0,5px)scale(1);
+    transform-origin: top left;
+    transition: 200ms cubic-bezier(0,0,0.2,1) 0ms;
+    left:5px;
+    color:rgb(62, 60, 60);
+}
+.input_container:focus-within label{
+    transform: translate(0,-20px)scale(0.9);
+}
+.custom_input{
+    grid-column: 1/4;
+
+}
+.input_container .filled{
+    transform: translate(0,-20px)scale(0.9);
+}
+.error_mssg{
+    color:rgb(183, 28, 28);
+    font-size: smaller;
+}
+.preset_mssg{
+    color:rgb(62, 60, 60);
+    font-size: smaller;
+}

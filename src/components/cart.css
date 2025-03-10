@@ -1,0 +1,52 @@
+.cart_main{
+    width:100%;
+    height:auto;
+}
+.cart_content{
+    width:100%;
+    height:fit-content;
+    padding-top: 200px;
+}
+.cart_button{
+    background-color: white;
+    width:30%;
+    border: 0.5px solid;
+}
+.gift_{
+    width:100%;
+    border:0.5px solid;
+    height:10%;
+}
+.cart_items{
+    display:grid;
+    width:100%;
+    grid-template-columns:1fr;
+    grid-auto-rows:minmax(100px,auto);
+    height:100vh;
+}
+
+@media (min-width:600px){
+    .cart_items{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (min-width:1024px){
+    .cart_items{
+        grid-template-columns: repeat(5,1fr);
+    }
+}
+.add_sub{
+    display:grid;
+    width:30%;
+    grid-template-columns: repeat(3,1fr);
+
+}
+.add{
+    cursor: pointer;
+}
+.sub{
+    cursor: pointer;
+}
+.card_title{
+    font-size: smaller;
+}

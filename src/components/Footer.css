@@ -1,0 +1,16 @@
+.Footer_main{
+    width:100%;
+    height:100vh;
+    display:block;
+    flex-direction: column;
+}
+.content2{
+    display:flex;
+    margin-top: 300px;
+    gap:50px;
+    margin-left: 100px;;
+}
+.list_footer{
+    list-style-type: none;
+    padding: 0;
+}
